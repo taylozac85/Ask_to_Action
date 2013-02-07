@@ -1,0 +1,49 @@
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag("slide-01.jpg") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Discovery</h1>
+          <p class="lead">Have you utilized your data to generate insights about your customers and your market?</p>
+          <a class="btn btn-large btn-primary" href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("slide-02.jpg") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Optimization</h1>
+          <p class="lead">Have you optimized your offereing, pricing, growth strategy?</p>
+          <a class="btn btn-large btn-primary" href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="/assets/slide-03.jpg" alt=" ">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Validation</h1>
+          <p class="lead">Can you support your key assumptions, business model, projections?</p>
+          <a class="btn btn-large btn-primary" href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
+
+
+<!-- included so that the site auto-cycles through carousel -->
+<script>
+  !function ($) {
+    $(function(){
+      // carousel demo
+      $('#myCarousel').carousel()
+    })
+  }(window.jQuery)
+</script>
