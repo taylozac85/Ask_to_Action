@@ -9,11 +9,7 @@ html,
 body {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
-  color: #5a5a5a;
-}
-
-#form {
-  padding-top: 100px;
+  color: #575757;
 }
 
 
@@ -189,3 +185,63 @@ body {
 /* CONTACT PAGE
 -------------------------------------------------- */
 
+.support-body { 
+  height: 580px;
+  width: 700px;
+  margin: 100px auto;
+  border-radius: 8px;
+  background-color: #F1F1F1;
+  -webkit-box-shadow: 0 3px 4px #C2C2C2;
+  padding: 0px 20px;
+  h3 {
+    border-bottom: 1px solid #cccccc;
+    padding: 10px 0px;
+    font-size: 20px;
+  }
+}
+
+#form {
+  padding-top: 10px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-style: bold;
+}
+
+#message_name, 
+#message_email,
+#message_subject {
+  /* XX Shouldn't this be 660px for 700px width minus 20px padding on either side? */
+  width: 688px;
+  height: 20px;
+  border-radius: 6px;
+}
+
+#message_body {
+  width: 688px;
+  height: 170px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.actions {
+  input {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: #519743;
+    height: 35px;
+    width: 110px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: none;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+  }
+}
