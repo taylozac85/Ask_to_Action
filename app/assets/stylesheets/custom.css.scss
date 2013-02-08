@@ -1,13 +1,29 @@
 @import "bootstrap";
+@import "bootstrap-responsive";
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+html,
 body {
-  padding-bottom: 40px;
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
   color: #5a5a5a;
 }
+
+
+/* CUSTOMIZED STANDARDS - except for carousel
+-------------------------------------------------- */
+
+#standard-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -54,7 +70,7 @@ body {
 
 
 
-/* CUSTOMIZE THE NAVBAR
+/* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
@@ -151,86 +167,21 @@ body {
   letter-spacing: -1px;
 }
 
-
-
-/* RESPONSIVE CSS
+/* FOOTER
 -------------------------------------------------- */
 
-@media (max-width: 979px) {
-
-  .container.navbar-wrapper {
-    margin-bottom: 0;
-    width: auto;
-  }
-  .navbar-inner {
-    border-radius: 0;
-    margin: -20px 0;
-  }
-
-  .carousel .item {
-    height: 500px;
-  }
-  .carousel img {
-    width: auto;
-    height: 500px;
-  }
-
-  .featurette {
-    height: auto;
-    padding: 0;
-  }
-  .featurette-image.pull-left,
-  .featurette-image.pull-right {
-    display: block;
-    float: none;
-    max-width: 40%;
-    margin: 0 auto 20px;
-  }
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
+.container .credit {
+  margin: 20px 0;
 }
 
+/* CONTACT PAGE
+-------------------------------------------------- */
 
-@media (max-width: 767px) {
-
-  .navbar-inner {
-    margin: -20px;
-  }
-
-  .carousel {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-  .carousel .container {
-
-  }
-  .carousel .item {
-    height: 300px;
-  }
-  .carousel img {
-    height: 300px;
-  }
-  .carousel-caption {
-    width: 65%;
-    padding: 0 70px;
-    margin-top: 100px;
-  }
-  .carousel-caption h1 {
-    font-size: 30px;
-  }
-  .carousel-caption .lead,
-  .carousel-caption .btn {
-    font-size: 18px;
-  }
-
-  .marketing .span4 + .span4 {
-    margin-top: 40px;
-  }
-
-  .featurette-heading {
-    font-size: 30px;
-  }
-  .featurette .lead {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-
-}
